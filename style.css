@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hwb(46 95% 0%);
+}
+
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+  #div-1 {
+    border-radius: 8px 8px 0px 0px;
+  }
+  #div-3 {
+    border-radius: 0px 0px 8px 8px;
+  }
+}
+@media (min-width: 801px) {
+  .main {
+    flex-direction: row;
+  }
+  #div-1 {
+    border-radius: 8px 0px 0px 8px;
+  }
+  #div-3 {
+    border-radius: 0px 8px 8px 0px;
+  }
+}
+main {
+  display: grid;
+  min-height: 90vh;
+}
+main .main {
+  margin: auto;
+  display: flex;
+  padding: 10px;
+}
+main .main div {
+  max-width: 300px;
+  min-width: 250px;
+  padding: 40px;
+  min-height: 450px;
+  max-height: 500px;
+  color: white;
+}
+main .main div img {
+  padding: 30px 0px;
+}
+main .main div h1 {
+  padding: 30px 0px;
+  font-size: 40px;
+}
+main .main div p {
+  font-size: large;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+main .main div button {
+  padding: 15px 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 40px;
+}
+main .main #div-1 {
+  background-color: #e28525;
+}
+main .main #div-1 button {
+  color: #e28525;
+}
+main .main #div-2 {
+  background-color: #04525d;
+}
+main .main #div-2 button {
+  color: #04525d;
+}
+main .main #div-3 {
+  background-color: #043033;
+}
+main .main #div-3 button {
+  color: #043033;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}/*# sourceMappingURL=style.css.map */
